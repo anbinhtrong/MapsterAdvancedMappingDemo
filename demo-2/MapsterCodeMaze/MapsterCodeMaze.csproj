@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Mappings\DebugMapster.cs" />
     <Compile Include="Mappings\MappingFunctions.cs" />
+    <Compile Include="Mappings\MapsterConfigDemo.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonDto.cs" />

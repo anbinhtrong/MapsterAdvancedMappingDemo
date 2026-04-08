@@ -21,6 +21,7 @@ namespace MapsterCodeMaze.Startup
                     Street = "Funny Street 2",
                     City = "Neverwood"
                 },
+                Password = "123456"
             };
         }
 
@@ -40,7 +41,8 @@ namespace MapsterCodeMaze.Startup
                         PostCode = "123N",
                         Street = "Funny Street 2",
                         City = "Neverwood"
-                    }
+                    },
+                    Password = "123456"
                 },
                 new Person()
                 {
@@ -54,7 +56,8 @@ namespace MapsterCodeMaze.Startup
                         PostCode = "W1A 1AA",
                         Street = "Kensington Gardens 1",
                         City = "London"
-                    }
+                    },
+                    Password = "123456789"
                 },
                 new Person()
                 {
@@ -68,7 +71,8 @@ namespace MapsterCodeMaze.Startup
                         PostCode = "456N",
                         Street = "Pirate Cove 7",
                         City = "Skull Island"
-                    }
+                    },
+                    Password = "1234567890"
                 }
             };
         }

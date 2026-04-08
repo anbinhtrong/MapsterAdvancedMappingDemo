@@ -9,7 +9,7 @@ namespace MapsterCodeMaze.Mappings
         public static void DebugMapping<TSource, TDestination>()
         {
             // Get the Expression Tree that Mapster uses for the specific mapping pair
-            var config = TypeAdapterConfig<TSource, TDestination>.NewConfig();
+            var config = TypeAdapterConfig<TSource, TDestination>.ForType();
             var expression = config.Config.CreateMapExpression(new Mapster.Models.TypeTuple(typeof(TSource), typeof(TDestination)),
   Mapster.MapType.Projection);
 

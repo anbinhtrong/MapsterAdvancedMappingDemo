@@ -1,6 +1,8 @@
-﻿using MapsterCodeMaze.Mappings;
+﻿using Mapster;
+using MapsterCodeMaze.Mappings;
 using MapsterCodeMaze.Models;
 using System;
+using System.Text;
 
 namespace MapsterCodeMaze
 {
@@ -8,9 +10,14 @@ namespace MapsterCodeMaze
     {
         static void Main(string[] args)
         {
-            DebugMapster.DebugMapping<Person, PersonDto>();
+            Console.OutputEncoding = Encoding.UTF8;
+            // Demo: Hiển thị so sánh IgnoreNonMapped vs Ignore
+            MapsterConfigDemo.DemoIgnoreNonMapped();
+
+            Console.WriteLine("\n═══════════════════════════════════════════════════\n");
 
             var person = MappingFunctions.MapPersonToNewDto();
+            DebugMapster.DebugMapping<Person, PersonDto>();
             PrintPerson(person);
         }
 
@@ -20,6 +27,7 @@ namespace MapsterCodeMaze
             Console.WriteLine($"Title: {person.Title}");
             Console.WriteLine($"Name: {person.FirstName} {person.LastName}");
             Console.WriteLine($"Date of Birth: {person.DateOfBirth:yyyy-MM-dd}");
+            Console.WriteLine($"Password: {person.Password}");
             Console.WriteLine("===========================");
         }
     }
